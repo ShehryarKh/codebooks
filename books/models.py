@@ -25,4 +25,5 @@ class Review(models.Model):
 class Author(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    number_of_books = models.IntegerField(max(1000))
+    number_of_books = models.IntegerField(validators = [MinValueValidator(0), MaxValueValidator(1000)])
+    books = models.ManyToManyField(Book)
