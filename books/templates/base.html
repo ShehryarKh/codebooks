@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Find the Tools To learn</title>
+<!-- Latest compiled and minified CSS -->
+<link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="static/blog.css">
+
+</head>
+<body>
+
+<div class = "container large-6 small-6 columns">
+
+		{% block content %}
+
+		{% endblock content %}
+	</div>
+{% block footer %}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="{% static 'materialize/bin/materialize.js' %}"></script>
+{% endblock %}
+</body>
+</html>
