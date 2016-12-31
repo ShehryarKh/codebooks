@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from books.models import Book, Review, Author
 from django.contrib.auth import authenticate, login
+from .models import Book, Review, Author
 
 
 # Create your views here.
