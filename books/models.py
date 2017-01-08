@@ -21,8 +21,7 @@ class Book(models.Model):
     title = models.CharField(max_length= 120)
     date_published = models.DateField()
     buy_link = models.URLField(max_length=120, blank=True)
-    images = models.ImageField(upload_to="photobook", blank=True,
-                                null= True)
+    images = models.ImageField(upload_to="photobook", blank=True)
 
     def __str__(self):
         return self.title

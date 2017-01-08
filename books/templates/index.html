@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+{% load staticfiles %}
 
 <h2>Hello</h2>
 <h5>This is were all the books will go man</h5>
@@ -8,8 +9,9 @@
 
     {% for book in books %}
         <p>{{book.title}}</p>
-        <p>{{book.title}}</p>
-        <p>{{book.title}}</p>
+        <p>{{book.images}}</p>
+    <p>
+<img src="{{ book.images.url }}" alt="img" class="img-responsive img-rounded"></p>
     {% endfor %}
 
 
