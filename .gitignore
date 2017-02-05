@@ -54,6 +54,8 @@ coverage.xml
 
 # Django stuff:
 *.log
+settings.py
+/topbook/settings.py
 local_settings.py
 /local.py
 /topbook/settings/local.py
