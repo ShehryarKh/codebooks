@@ -6,12 +6,23 @@
 <h5>This is were all the books will go man</h5>
 
 <div class="container">
-
     {% for book in books %}
-        <p>{{book.title}}</p>
-        <p>{{book.images}}</p>
-    <p>
-<img src="{{ book.images.url }}" alt="img" class="img-responsive img-rounded"></p>
+
+    <div class="book_image">
+        <div id="image" style="width: 200px; height: 200px">
+            <img src="{{ book.images.url }}" alt="img" class="img-responsive img-rounded"></p>
+        </div>
+    </div>
+
+    <div class="book_title">
+        <div id="book_title" style="padding-top:10px">
+
+            <p>{{book.title}}</p>
+        </div>
+    </div>
+
+    </div>
+
     {% endfor %}
 
 

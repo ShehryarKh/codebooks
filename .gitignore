@@ -55,7 +55,8 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-
+/local.py
+/topbook/settings/local.py
 # Flask stuff:
 instance/
 .webassets-cache
@@ -133,4 +134,5 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
 
